@@ -1,0 +1,172 @@
+
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-center{
+    text-align: center;
+    
+}
+
+.d-md-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.w-md-250px{
+    background-color: white;
+    border-radius: 7px;
+    width: 20%;
+    padding: 15px;
+    box-shadow: 2px 2px 10px #dee6f4;
+    position: relative;
+}
+.w-md-250px:hover{
+    transform: scale(1.1);
+    border: 3px solid rgb(116, 220, 51);
+}
+
+.w-md-250px .btn:hover{
+   border-style: none;
+    background-color: rgb(116, 220, 51);
+}
+
+.content__wrap{
+    padding: 20px 10px;
+}
+
+.btn a{
+    
+    color: rgb(65, 165, 218);
+}
+.d-grid{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.btn{
+    background-color: white;
+    border-radius: 7px;
+    padding: 5px 40px;
+}
+
+.text-primary{
+    color: rgb(21 37 130);
+    font-size: 70px;
+}
+
+ul{
+    list-style-image: url('image/im.svg');
+}
+
+
+ul li {
+    margin-bottom: 12px;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    color: transparent;
+    font-size: 1px;
+    content: " ";
+    margin-left: -1.3em;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: rgb(116, 220, 51);
+    -webkit-mask-image: url("image/im.svg");
+    -webkit-mask-size: cover;
+}
+
+.list-group-item{
+    color: grey;
+}
+  
+  .h-100 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: -2.9px;
+    right: -4px;
+  }
+  
+  .ribbon {
+    
+    box-shadow: 0px 0px 8px rgba(150, 144, 144, 0.79);
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 6px 0;
+    left: 142px;
+    top: 20px;
+    width: 200px;
+    background-color: red;
+   
+    color: white;
+    font-size: 10px;
+  }
+  
+  .ribbon:before, .ribbon:after {
+    content: "";
+   
+    position:absolute;
+    bottom: -4px;
+  }
+  
+  .ribbon:before {
+    left: 0;
+  }
+  .ribbon:after {
+    right: 0;
+  }
+
+
+
+
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .d-md-flex{
+        flex-direction: column;
+    }
+
+    .w-md-250px{
+        width: auto;
+        height: 300px;
+    }
+    
+
+    .text-primary{
+        font-size: 40px;
+    }
+      
+      .ribbon {
+        left: 310px;
+      }
+      
+     
+ }
+
+ @media (min-width: 481px) and (max-width: 1024px){
+
+    .d-md-flex{
+        flex-direction: column;
+    }
+
+    .w-md-250px{
+        width: auto;
+        height: 300px;
+    }
+
+    .ribbon {
+        left: 85%;
+        top: 10%;
+      }
+ }
